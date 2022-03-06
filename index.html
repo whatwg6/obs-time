@@ -3,11 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>obs - time</title>
+    <style>
+      #time {
+        font-size: 30px;
+        color: white;
+      }
+    </style>
   </head>
   <body>
     <div id="time">时间加载中...</div>
@@ -31,7 +34,7 @@
         }
 
         const g = updateTime();
-        
+
         let start = performance.now();
 
         return function next() {
